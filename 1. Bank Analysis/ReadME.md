@@ -57,10 +57,14 @@ This structure improves:
 
 ## 📈 Dashboard Preview
 
-![Transaction Banking Overview](./images/overview.jpg)
+<h3>📊 Dashboard Preview (Compact)</h3>
 
-![Transaction Behaviours](./images/transactions.jpg)
+<p align="center">
+  <img src="./Images/Overview.jpg" width="48%" />
+  <img src="./Images/Transaction%20Behaviors.jpg" width="48%" />
+</p>
 
-![Customer Behaviours](./images/customers.jpg)
-
-![Revenue Analysis](./images/revenue.jpg)
+<p align="center">
+  <img src="./Images/Customer%20Behaviors.jpg" width="48%" />
+  <img src="./Images/Revenue%20Analysis.jpg" width="48%" />
+</p>
