@@ -1,4 +1,4 @@
-## 👥 Employee Performance Analysis – Power BI Dashboard
+## 👥 Employee Performance Analysis - HR
 
 ### 📌 Project Overview
 An end-to-end HR analytics and employee performance dashboard built in Power BI.  
@@ -102,9 +102,8 @@ This report enables HR and operations teams to monitor workforce health, perform
   <img src="./Images/HR Metrics.jpg" width="48%" />
   <img src="./Images/Store Metrics.jpg" width="48%" />
 </p>
+
 <p align="center">
-  <img src="./Employee Details.jpg" width="48%" />
-  <img src="./Store Details.jpg" width="48%" />
+  <img src="./Images/Employee Details.jpg" width="48%" />
+  <img src="./Images/Store Details.jpg" width="48%" />
 </p>
-
-
