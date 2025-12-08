@@ -5,3 +5,4 @@
 
 - 🛒 **North America Retail Sales Analysis** - Multi-page Power BI dashboard analyzing sales, profit, orders, returns, and delivery performance across North America. Features advanced DAX-based time intelligence (YoY & PY), dynamic Top/Bottom ranking by multiple dimensions (City, State, Product, Customer), discount vs profit analysis, and executive-ready KPI visuals.
 
+- 👥 **Employee Performance & HR Analytics** - End-to-end HR analytics solution built in Power BI, featuring headcount and attrition analysis, promotion tracking, employee-level and store-level drill-through, dynamic KPI selection, and a custom Power Query calendar function to support advanced time intelligence and performance monitoring.
