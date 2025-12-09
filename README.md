@@ -1,18 +1,63 @@
-### 📌 Power-BI-Projects:
-- 🏦 **Transaction Banking Report (Bank Analysis)** 
-  Multi-page Power BI solution for analyzing transaction amounts, fees, customers, and revenue for a retail bank, with time-intelligence (YoY & 12-month moving average), customer segmentation, currency switching (EUR/USD), and an executive-ready design.
+# 📊 Power BI Projects Portfolio
 
-- 💼 **Financial Statement Report (Finance Analysis)**
-  Power BI solution delivering interactive P&L dashboards with Revenue, Expenses, COGS, EBIT, and Net Income analysis, including YoY comparisons, budget vs actual tracking, profitability ratios, and executive-ready financial insights.
+A collection of end-to-end **Power BI analytics projects** designed to simulate real-world business scenarios across finance, banking, retail, HR, hospitality, and healthcare.  
+Each project focuses on **data modeling, advanced DAX, time intelligence, and executive-level storytelling dashboards**.
 
-- 🛒 **North America Retail Sales Analysis** 
-  Multi-page Power BI dashboard analyzing sales, profit, orders, returns, and delivery performance across North America. Features advanced DAX-based time intelligence (YoY & PY), dynamic Top/Bottom ranking by multiple dimensions (City, State, Product, Customer), discount vs profit analysis, and executive-ready KPI visuals.
+---
 
-- 👥 **Employee Performance & HR Analytics**
-  End-to-end HR analytics solution built in Power BI, featuring headcount and attrition analysis, promotion tracking, employee-level and store-level drill-through, dynamic KPI selection, and a custom Power Query calendar function to support advanced time intelligence and performance monitoring.
+## 🏦 Transaction Banking Analytics (Retail Banking)
 
-- 🏡 **Airbnb Market & Pricing Analysis (Vancouver, Canada)**
-  An advanced Power BI analytics project analyzing Airbnb listings using pricing strategy, occupancy demand, revenue efficiency, and guest experience. The solution leverages Python (Pandas) for data preparation, advanced DAX measures for rankings and KPIs, heavy use of interactive tooltips, and executive-style dashboards to simulate a real-world short-term rental performance analysis.
+Multi-page Power BI banking analytics solution analyzing **transaction volumes, customer behavior, fees, and revenue performance** in a retail banking environment.  
+The project leverages advanced **time intelligence (YoY, PY, 12-month moving average)**, **currency switching (EUR / USD)**, **forecasting**, and **Decomposition Tree visuals** to uncover drivers behind revenue and fee performance.  
+Built using **Tabular Editor calculation groups** for scalable time logic and designed with an **executive-ready financial dashboard layout**.
 
-- 🏥 **Healthcare Analytics (USA)**
- Advanced Power BI project analyzing hospital performance across the United States, focusing on discharges, length of stay (LOS), and cost efficiency. Built with advanced DAX (SUMMARIZE / SUMMARIZECOLUMNS), Key Influencers analysis, and drill-through hospital profiling for deep performance insights.
+---
+
+## 💼 Financial Statement Report (Finance Analytics)
+
+An executive-focused **P&L and financial performance reporting solution** built in Power BI.  
+The dashboard delivers interactive insights across **Revenue, Expenses, COGS, EBIT, Gross Profit, and Net Income**, with **YoY comparisons**, **budget vs actual analysis**, and **profitability ratios**.  
+The model uses a structured **account matrix / financial hierarchy**, advanced **DAX measure branching**, and statement-style layouts to replicate real-world finance reporting.
+
+---
+
+## 🛒 North America Retail Sales Analysis
+
+Multi-page Power BI dashboard analyzing **sales, profit, orders, returns, discounts, and delivery performance** across North America.  
+Features advanced **DAX-based time intelligence (YoY & Prior Year)**, **dynamic Top/Bottom ranking** across multiple dimensions (City, State, Product, Customer), and **discount vs profitability analysis**.  
+Designed with executive KPI visuals and drill-enabled exploration for operational and strategic insights.
+
+---
+
+## 👥 Employee Performance & HR Analytics
+
+End-to-end HR analytics solution built in Power BI, focusing on **headcount, attrition, promotions, performance, and workforce trends**.  
+Includes **employee-level and store-level drill-through pages**, **dynamic KPI selection using DAX**, and a **custom Power Query calendar function** to support advanced time intelligence and workforce monitoring.
+
+---
+
+## 🏡 Airbnb Market & Pricing Analytics (Vancouver, Canada)
+
+Advanced Power BI analytics project analyzing **Airbnb pricing strategy, occupancy demand, revenue efficiency, and guest experience** in Vancouver.  
+The solution combines **Python (Pandas) for data preparation**, advanced **DAX measures for rankings and KPIs**, and heavy use of **interactive tooltips**.  
+Designed to simulate a real-world **short-term rental market performance analysis** with executive-style dashboards.
+
+---
+
+## 🏥 Healthcare Analytics (USA)
+
+Advanced Power BI healthcare analytics solution evaluating **hospital performance, discharge patterns, length of stay (LOS), and cost efficiency** across the United States.  
+Built using advanced **DAX (SUMMARIZE / SUMMARIZECOLUMNS)**, **Key Influencers analysis**, and **drill-through hospital profiling** to enable deep performance investigation at both system and facility levels.
+
+---
+
+## 🧰 Core Tools & Skills Across Projects
+
+- Power BI Desktop  
+- Advanced DAX & Measure Branching  
+- Time Intelligence (YoY, PY, Moving Average, Forecasting)  
+- Tabular Editor & Calculation Groups  
+- Data Modeling & Star Schemas  
+- Drill Through & Interactive Tooltips  
+- Python (Pandas) for Data Preparation  
+- Executive Dashboard Design & Storytelling
