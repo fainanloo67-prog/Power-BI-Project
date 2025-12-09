@@ -67,6 +67,7 @@ The report supports both executive-level monitoring and hospital-level deep-dive
 - Drill Through & Cross-Filtering  
 - Custom Interactive Dashboards  
 
+## 📸 Dashboard Screenshots
 
 <p align="center">
   <img src="./Images/Hospitals.jpg" width="90%" />
