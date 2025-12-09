@@ -1,107 +1,82 @@
-# Financial Statement Report
+# 📊 Financial Statement Report – Revenue, Expense & Profitability Analytics
 
-## 📌 Project Overview
-This Power BI report provides a **financial statement view** of a SaaS-style business, showing
-Revenue, COGS, OPEX, Other Expenses, EBIT, Gross Profit, and Net Income over time.
-
-The goal is to give finance and leadership teams a clear and interactive view of **profitability,
-budget vs actuals, and expense trends** across years, quarters, classes, and account names.
+This project is an end-to-end Power BI financial reporting solution that replicates a modern **P&L / Income Statement** view for a SaaS-style business.  
+The report is designed for both **executive review** and **finance team analysis**, with dynamic views for Revenue, Expenses, COGS, OPEX and Net Income across years, quarters, account classes and detailed account names.
 
 ---
 
-## 🎯 Business Objectives
-- Monitor **Revenue, Expenses, COGS, OPEX, EBIT, Gross Profit, and Net Income** over time
-- Compare **current year vs last year (ΔPY / YoY%)** for key financial metrics
-- Analyze **Revenue vs Budget** and **Expenses vs Budget**
-- Identify which **expense classes, vendors, and accounts** drive most of the cost
-- Understand **expense and revenue trends** across years and quarters for better planning
+## 🎯 Project Objectives
+
+- Provide a **statement-style view** of Revenue, COGS, OPEX, Other Expenses and Net Income.
+- Track **year-over-year (ΔPY)** performance for each major KPI.
+- Analyze **trends by account class and account name** using a structured financial hierarchy.
+- Compare **Revenue vs Budget** and **Expenses vs Budget** over time.
+- Enable finance teams to quickly identify **which accounts drive growth or margin erosion**.
 
 ---
 
-## 📊 Key Metrics & KPIs
+## 📑 Report Pages
 
-- **Revenue**
-- **COGS**
-- **Gross Profit**
-- **OPEX**
-- **EBIT**
-- **Net Income**
-- **Total Expenses & Other Expenses**
-- **YoY% and Variance vs Prior Year**
-- **Variance vs Budget (amount & %)**
-- **Expense as % of Revenue**
+### 1. Overview – P&L Summary
+
+- High-level KPIs for:
+  - **Revenue**, **Expenses**, **COGS**, **Gross Profit**, **EBIT**, **Net Income**
+  - Each KPI includes a **ΔPY %** (Year-over-Year change vs prior year).
+- Small-multiple trend charts for each KPI (monthly view with prior-year comparison).
+- **Waterfall Profit & Loss** visual to show how each account group contributes from Revenue down to Net Income.
+- **Revenue vs Expenses** monthly comparison chart to highlight margin trends.
+
+### 2. Revenue Analysis
+
+- Statement-style layout focused on **top-line performance**:
+  - Revenue, Gross Profit, EBIT, Net Income – all with **monthly trends vs last year**.
+- **Revenue trends by MEMO**:
+  - Contribution of different revenue streams (e.g., Recurring Income, Non Recurring Income, Other Income).
+- **Top Accounts Revenue Trends**:
+  - Small-multiple area charts for the **top revenue accounts** over time.
+- Detailed **Revenue table by account hierarchy**:
+  - LEVEL_02 (e.g., Recurring Income) → Account Name
+  - Revenue for each year + **Revenue as % of Total** (share of total revenue).
+
+### 3. Expense Analysis
+
+- Dedicated view for **Expense structure and growth**:
+  - Total Expenses, COGS, OPEX, Other Expenses – each with monthly trend vs prior year.
+- **Expenses Trend by CLASS**:
+  - Class-level stacked area chart showing how Customer Support, G&A, R&D, Sales & Marketing, etc. evolve over time.
+- **Expenses Trend by NAME**:
+  - Top vendor / account trends (e.g., Google Ads, AWS, Payroll, etc.).
+- Detailed **Expense table by account name**:
+  - Expense per year + **Expense as % of Revenue** to quickly see which accounts are cost-heavy.
+- The layout mirrors a **management financial statement**:  
+  Overview → Revenue → Expense, with consistent navigation and design.
+
+---
+
+## 🧠 Key Analytical Techniques
+
+### Advanced DAX & Measure Branching
+
+- Core base measures for Revenue, COGS, OPEX, Other Expenses, Gross Profit, EBIT, Net Income.
+- Derived measures for:
+  - **Prior-Year (PY)** metrics  
+  - **ΔPY %** (YoY % change)  
+  - **Budget vs Actual** for both Revenue and Expenses  
+  - **Expense as % of Revenue** and **Revenue share of total**
+- Measure branching is used heavily so that **one base measure feeds multiple derived KPIs**, keeping the model clean and maintainable.
+
+### Account Matrix & Financial Hierarchy
+
+- A dedicated **Account Matrix** / mapping table is used to group accounts into:
+  - Class (Revenue / COGS / OPEX / Other)
+  - Sub-categories (LEVEL_02)
+- This semantic layer allows the same transactional data to be reused across multiple views (P&L, revenue detail, expense detail) without duplicating logic.
 
 
-## 🧱 Data Model & Measures
-
-The report is built on a clean star-style model with a dedicated **Measure table** acting as
-the semantic layer.
-
-### Core Tables
-
-- **Transaction**  
-  Main fact table containing transaction-level financial data (revenue and expense amounts).
-
-- **Accounts**  
-  Chart of accounts with account-level details used for financial reporting.
-
-- **Account Matrix / Matrix**  
-  Tables that define the **financial statement structure** (e.g. Revenue, COGS, OPEX, Other
-  Expenses, EBIT, Gross Profit, Net Income) and how accounts roll up into those lines.
-
-- **Budget**  
-  Budget values by account, year, and period, used for **Revenue vs Budget** and
-  **Expenses vs Budget** comparisons.
-
-- **Calendar**  
-  Standard date table used for time-intelligence (Year, Quarter, Month, etc.).
-
-### Parameter / Helper Tables
-
-- **Parameter_Revenue**  
-  Used to drive dynamic revenue-related views and measures.
-
-- **Parameter Expense**  
-  Used to control expense views and dynamic calculations.
-
-These parameter tables help switch between different perspectives (e.g. Revenue vs Expense)
-without duplicating visuals or hard-coding logic.
-
-### Measure Table & Display Folders
-
-All business logic is centralized in a dedicated **`Measure`** table, organized into
-display folders for maintainability:
-
-- **COGS**
-- **EBIT**
-- **Expenses**
-- **Financial Values**
-- **Gross Profit**
-- **Net Income**
-- **OPEX**
-- **Revenue**
-
-For example, the **Revenue** folder includes:
-
-- `Revenue`
-- `Revenue_LY`
-- `Revenue YOY%`
-- `Revenue % of Total`
-- `Rev Budget`
-- `Rev Variance`
-- `Total revenue YoY% Dynamic`
-- `Delta R/E`
-- `Delta R/E %`
-- `Expense as % of Revenue`
-- `R/E Max`
-
-This structure makes it easy to reuse measures across visuals while keeping the logic
-well-organized and aligned with financial statement concepts.
-
+---
 
 ## 📈 Dashboard Preview
 
-<h3>Overview</h3>
 <p align="center">
   <img src="./Images/Overview.jpg" width="90%" />
 </p>
