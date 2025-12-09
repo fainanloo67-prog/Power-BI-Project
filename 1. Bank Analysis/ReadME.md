@@ -1,74 +1,97 @@
-# 🏦 Transaction Banking Report (Bank Analysis)
+# 🏦 Transaction Banking Analytics – Financial Performance & Customer Behavior Analysis
 
-## 📌 Project Overview
-A multi‑page Power BI solution to analyze transaction amounts, fees, customers, and revenue for a retail bank.  
-Includes executive KPIs, trend charts, customer segmentation, currency switching (EUR/USD), and clean, business‑ready visuals.
+This project is an end-to-end Power BI financial analytics solution built to analyze transaction volumes, revenue, fees, customer behavior, and product performance in a retail banking environment.  
+The report is designed for executive-level monitoring as well as detailed exploratory analysis using advanced visuals, time intelligence, and semantic modeling techniques.
 
----
+## 🎯 Project Objectives
 
-## 🎯 Key Objectives
-- Track overall transaction value, fees, and customer behavior over time  
-- Compare current year vs prior year (YoY) for major KPIs  
-- Drill into segments, channels, branches, and products to uncover performance drivers  
-- Provide an executive dashboard that supports quick decision making
+- Analyze total transaction volume, revenue, and banking fees across products and customer segments  
+- Monitor financial performance using Year-over-Year (YoY), Prior Year (PY), and Moving Average metrics  
+- Forecast future financial trends to support proactive decision-making  
+- Identify customer behavior drivers using advanced visual decomposition techniques  
+- Enable deep-dive analysis across products, channels, segments, and time  
 
----
+## 📊 Report Pages Overview
 
-## 🧠 Advanced Techniques & Modeling
+**Overview**  
+High-level KPIs including Total Amount, Transactions Count, Customers, Insurance Fees, Late Payment Fees, and Credit Card Fees, enriched with YoY comparison indicators.
 
-### ✅ Calculation Groups & Tabular Editor
-- Used **Tabular Editor** to create calculation groups, keeping time‑intelligence logic reusable and the model tidy.  
-- Calculation groups reduce redundant measures and apply common patterns (e.g., prior‑year logic) across many measures, making the model more scalable and maintainable. 
-- Time‑intelligence and dynamic indicator logic kept centralized rather than duplicated across dozens of measures.
+**Transaction & Revenue Trends**  
+Monthly trends with Moving Average and Forecast lines to clearly show growth patterns, seasonality, and future expectations.
 
-### ✅ Forecast / Rolling Logic
-- Implemented **12‑month moving averages** and **forecast trends** to show expected future behavior along with actuals.  
-- Gives stakeholders a forward‑looking view rather than only historical numbers.
+**Customer & Product Analysis**  
+Revenue and transaction breakdown by customer segments, product categories, and individual products.
 
-### ✅ Key Influencers / Diagnostic Insight
-- Added diagnostic analytics to highlight **which factors most influence performance** when needed—helpful for rapid root‑cause checks.  
-- The Key Influencers visual in Power BI is designed to surface top factors that affect a chosen metric, ranking them for clearer interpretation.
-- Enables teams to quickly see relevant drivers without building separate complex measures for each hypothesis.
+**Geographic Analysis**  
+Branch-level analysis with regional performance mapping and detailed transaction tables.
 
-### ✅ Measure‑Driven, Clean Model
-- Central **Measure table** with structured display folders (Main, Revenue, Customer Behaviours, etc.)  
-- Dynamic currency switch, YoY, and KPI formatting all driven by measures built once and reused everywhere.
+**Customer Behavior Analysis**  
+Advanced breakdown of revenue and fees by:
+- Product Category  
+- Customer Segment  
+- Channel (Branch, Online, Mobile, ATM)  
 
----
+Using decomposition and hierarchical visuals.
 
-## 📄 Report Pages
-- **Overview** – High‑level KPIs, moving averages, YoY comparisons, and segment breakdowns  
-- **Transaction Behaviours** – Product types, channels, geographic maps, and waterfall analysis  
-- **Customer Behaviours** – Segment distribution, preferred offers, credit score segments, and customer trends  
-- **Revenue Analysis** – Decomposition tree, product and channel revenue breakdowns, monthly trends
+## 🧠 Key Analytical Techniques Used
 
----
+### 🌳 Decomposition Tree (Advanced Visual Technique)
 
-## 🎨 Design & UX
-- Executive‑focused layout with clear cards, maps, and charts  
-- Year and currency slicers, plus a reset button for quick navigation  
-- Consistent visual theme for fast scanning by business users
+Used extensively to analyze Total Revenue and Fees by dynamically breaking them down across:
+- Product Category  
+- Customer Segment  
+- Channel  
+- Individual Products  
 
----
+This allows users to interactively explore *why* a metric is high or low, not just *what* the number is.  
+The Decomposition Tree enables true root-cause analysis by letting users drill into multiple dimensions without creating dozens of separate visuals.
+
+### 📈 Time Intelligence & Forecasting
+
+- Year-over-Year (YoY) and Prior Year (PY) calculations applied consistently across all KPIs  
+- 12-Month Moving Average to smooth volatility and highlight long-term trends  
+- Forecasting applied to key financial metrics to provide forward-looking insights  
+
+### 🧩 Tabular Editor & Calculation Groups
+
+Calculation Groups were created using Tabular Editor to centralize time intelligence logic (e.g., Actual, PY, YoY %, Moving Average).
+
+Benefits:  
+- Eliminates duplication of similar DAX logic across dozens of measures  
+- Keeps the model clean, scalable, and easier to maintain  
+- Allows seamless switching between metrics using slicers without rewriting measures  
+
+## ⚙️ Data Modeling Approach
+
+- Clean star-schema style model built in Power BI Desktop  
+- Measure-driven design (no hard-coded values in visuals)  
+- Consistent naming conventions and structured measure folders  
+- All KPIs driven via centralized semantic logic  
+
+## 🎨 Design & UX Considerations
+
+- Executive-ready layout with clear KPI hierarchy  
+- Consistent color theme and spacing across pages  
+- Logical navigation between overview and deep-dive analysis  
+- Highly interactive visuals designed for data exploration, not static reporting  
 
 ## 🛠 Tools & Technologies
-- Power BI Desktop  
-- DAX, Calculation Groups  
-- Tabular Editor for semantic organization  
-- Key Influencers visual for rapid diagnostics  
-- Forecast and moving‑average logic for future trends
 
+- Power BI Desktop  
+- DAX (Advanced Measures & Time Intelligence)  
+- Tabular Editor (Calculation Groups)  
+- Decomposition Tree Visual  
+- Forecasting & Moving Average Analytics  
+- Interactive Slicers and Drill-Down Capabilities  
 
 ## 📈 Dashboard Preview
 
-<h3>📊 Dashboard Preview (Compact)</h3>
-
 <p align="center">
-  <img src="./Images/Overview.jpg" width="48%" />
-  <img src="./Images/Transaction%20Behaviors.jpg" width="48%" />
+  <img src="./Images/Overview.jpg" width="90%" />
+  <img src="./Images/Transaction Behaviors.jpg" width="90%" />
 </p>
 
 <p align="center">
-  <img src="./Images/Customer%20Behaviors.jpg" width="48%" />
-  <img src="./Images/Revenue%20Analysis.jpg" width="48%" />
+  <img src="./Images/Customer Behaviors.jpg" width="90%" />
+  <img src="./Images/Revenue Analysis.jpg" width="90%" />
 </p>
