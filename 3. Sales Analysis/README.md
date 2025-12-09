@@ -54,11 +54,11 @@ This project uses a fully **DAX-driven ranking model**, including:
 ## 📷 Dashboard Preview
 
 <p align="center">
-  <img src="./Images/Sales Metrics & Trends.jpg" width="45%" />
-  <img src="./Images/Sales Analysis.jpg" width="45%" />
+  <img src="./Images/Sales Metrics & Trends.jpg" width="90%" />
+  <img src="./Images/Sales Analysis.jpg" width="90%" />
 </p>
 
 <p align="center">
-  <img src="./Images/Sales Insights.jpg" width="45%" />
+  <img src="./Images/Sales Insights.jpg" width="90%" />
 </p>
 
