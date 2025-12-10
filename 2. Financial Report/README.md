@@ -1,11 +1,9 @@
-# 📊 Financial Statement Report – Revenue, Expense & Profitability Analytics
+# Financial Statement Report – Revenue, Expense & Profitability Analytics
 
 This project is an end-to-end Power BI financial reporting solution that replicates a modern **P&L / Income Statement** view for a SaaS-style business.  
 The report is designed for both **executive review** and **finance team analysis**, with dynamic views for Revenue, Expenses, COGS, OPEX and Net Income across years, quarters, account classes and detailed account names.
 
----
-
-## 🎯 Project Objectives
+## Project Objectives
 
 - Provide a **statement-style view** of Revenue, COGS, OPEX, Other Expenses and Net Income.
 - Track **year-over-year (ΔPY)** performance for each major KPI.
@@ -13,9 +11,7 @@ The report is designed for both **executive review** and **finance team analysis
 - Compare **Revenue vs Budget** and **Expenses vs Budget** over time.
 - Enable finance teams to quickly identify **which accounts drive growth or margin erosion**.
 
----
-
-## 📑 Report Pages
+## Report Pages
 
 ### 1. Overview – P&L Summary
 
@@ -53,7 +49,7 @@ The report is designed for both **executive review** and **finance team analysis
 
 ---
 
-## 🧠 Key Analytical Techniques
+## Analytical Techniques
 
 ### Advanced DAX & Measure Branching
 
@@ -65,17 +61,9 @@ The report is designed for both **executive review** and **finance team analysis
   - **Expense as % of Revenue** and **Revenue share of total**
 - Measure branching is used heavily so that **one base measure feeds multiple derived KPIs**, keeping the model clean and maintainable.
 
-### Account Matrix & Financial Hierarchy
-
-- A dedicated **Account Matrix** / mapping table is used to group accounts into:
-  - Class (Revenue / COGS / OPEX / Other)
-  - Sub-categories (LEVEL_02)
-- This semantic layer allows the same transactional data to be reused across multiple views (P&L, revenue detail, expense detail) without duplicating logic.
-
-
 ---
 
-## 📈 Dashboard Preview
+## Dashboard Preview
 
 <p align="center">
   <img src="./Images/Overview.jpg" width="90%" />
